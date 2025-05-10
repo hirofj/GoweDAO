@@ -1,0 +1,129 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+h1, h2 {
+    color: #35424a;
+    margin-bottom: 1rem;
+}
+
+button {
+    display: inline-block;
+    background: #50b3a2;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3a8a7b;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    color: #666;
+}
+
+/* 初期状態では詳細とステータスセクションは非表示 (HTMLにもstyle指定あり) */
+/* #contract-details, #dao-status {
+    display: none;
+} */
+
+/* テンプレートリストの簡単なスタイル（仮） */
+#template-list .template-item {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #e9e9e9;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#template-list .template-item:hover {
+     background-color: #dcdcdc;
+}
+
+/* ===== ↓ ここから追加 ===== */
+#staking-info {
+    background-color: #eef; /* 他のセクションと少し色を変える */
+}
+
+.staking-display p {
+    font-size: 1.1em;
+    margin: 0.5em 0;
+}
+
+.staking-display span {
+    font-weight: bold;
+    min-width: 50px; /* 数字部分の幅を少し確保 */
+    display: inline-block; /* 幅指定のため */
+    text-align: right; /* 数字は右寄せ */
+    margin-right: 5px;
+}
+
+.staking-actions {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+    display: flex;         /* 追加: Flexboxを有効にする */
+    flex-wrap: wrap;       /* 追加: 要素がはみ出たら折り返す */
+    align-items: center;   /* 追加: 要素を垂直方向中央揃えにする */
+    gap: 0.5rem;           /* 追加: 要素間の隙間を自動で設定 */
+}
+
+.staking-actions input[type="number"] {
+    padding: 0.7rem;
+    margin-right: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px; /* 幅調整 */
+}
+
+.staking-actions button {
+    margin-right: 0.5rem;
+    background-color: #4477aa; /* ボタンの色を少し変える */
+}
+.staking-actions button:hover {
+    background-color: #335588;
+}
+
+.staking-actions p small {
+    color: #666;
+    display: block; /* 改行させる */
+    margin-top: 1rem;
+}
+/* ===== ↑ ここまで追加 ===== */

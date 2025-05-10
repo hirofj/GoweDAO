@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoweDAO - MVP Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>GoweDAO - MVP Demo</h1>
+    </header>
+
+    <main id="app">
+        <section id="template-selection">
+            <h2>Select Contract Template</h2> <div id="template-list">
+                <p>Loading templates...</p> </div>
+        </section>
+
+        <section id="contract-details" style="display: none;">
+            <h2>Contract Details & DAO Submission</h2> <div id="details-content">
+                </div>
+            <button id="submit-dao-button">Deploy & Submit to DAO (Simulation)</button> </section>
+
+        <section id="dao-status" style="display: none;">
+            <h2>DAO Approval Status</h2> <div id="status-content">
+                </div>
+        </section>
+
+        <section id="staking-info">
+            <h2>Tokenomics & Staking (Simulation)</h2>
+            <div class="staking-display">
+                <p>Your Balance: <span id="gowe-balance">---</span> $GOWE</p>
+                <p>Staked Amount: <span id="staked-amount">---</span> $GOWE</p>
+                <p>Rewards Earned: <span id="rewards-earned">---</span> $GOWE</p>
+            </div>
+            <div class="staking-actions">
+                <input type="number" id="stake-amount-input" placeholder="Amount to stake" min="1">
+                <button id="stake-button">Stake $GOWE (Simulated)</button>
+                <button id="unstake-button">Unstake All $GOWE (Simulated)</button>
+                 <p><small>Note: This is a simulation. No real tokens are used.</small></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Soonami Venturethon Cohort 7</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
