@@ -49,6 +49,11 @@ Our roadmap includes:
 This project is based on the foundational concepts outlined in the research paper:
 "Development of a Contract Management System Using Blockchain" by Hiroshi Fujimoto et al. (IPSJ SIG Technical Report, Vol.2025-DPS-202 No.16 / Vol.2025-CSEC-108 No.16).
 
+## Live MVP Simulation
+
+You can try out the interactive frontend simulation of GoweDAO here:
+[https://lab.fjstation.net/GoweDAO/](https://lab.fjstation.net/GoweDAO/)
+
 ## Contact
 
 * Hiroshi Fujimoto
